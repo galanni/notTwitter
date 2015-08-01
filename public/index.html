@@ -10,31 +10,27 @@
 </head>
 <body>
     <header>
-        <span id="userName"></span>
-        <div><h4>no es Twitter</h4></div>
+            <span id="userName"></span>
+            <div><h4>no es Twitter</h4></div>
     </header>
     <!-- sector izquierdo -->
+    <aside>
+        <input id="tweetContent" type="text">
+        <button id="tweet">Mandar Tweet</button>
+    </aside>
 
-    <main>
-        <aside>
-            <input id="tweetContent" type="text">
-            <button id="tweet">Mandar Tweet</button>
-        </aside>
+    <div id="contenedor">
+        <div class="centre">
 
-        <div id="contenedor">
-            <div class="centre">
+            <div>User: felix <br>
+            Miguel dice algo en menos de 140 caracteres.</div>
 
-                <div>User: felix <br>
-                    Miguel dice algo en menos de 140 caracteres.</div>
+        </div>
+    </div>
 
-                </div>
-            </div>
-
-        </main>
-
-        <dialog id="dialog">
-            Ingresá tu usuario: <input id="userInput" type="text">
-            <button id="ingresarBtn">Ingresar</button>
-        </dialog>
-    </body>
-    </html>
+<dialog id="dialog">
+Ingresá tu usuario: <input id="userInput" type="text">
+<button id="ingresarBtn">Ingresar</button>
+</dialog>
+</body>
+</html>

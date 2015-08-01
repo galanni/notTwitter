@@ -3,30 +3,29 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-  margin-top:47px;
-}
-
-main {
-  position: relative;
+    height: 100%;
+    margin: 0px;
 }
 
 aside {
-    position: absolute;
+    position: fixed;
+    height: 100%;
     width: 250px;
-    left:0;
+    margin: 0px;
     background-color: #55acee;
     text-align: center;
 }
 
+#titulo {
+    color: #ffffff;
+    margin: auto;
+    width: 50%;
+}
+
 #contenedor {
     margin-left: 250px;
+    margin-top: 47px;
     padding: 30px;
-    border: 1px solid black;
 }
 
 div.centre{
@@ -36,20 +35,14 @@ div.centre{
   margin-right: auto;
 }
 
-.centre div {
-    border:1px solid black;
-    padding: 15px;
-}
 
 header {
     position: fixed;
     height: 47px;
     width:100%;
-    top:0;
+    top:0px;
     border: 1px solid black;
     text-align: center;
-    z-index: 1;
-    background-color: white;
 }
 
 header span {
@@ -65,7 +58,11 @@ header div {
   
 }
 
+.centre div {
+    border:1px solid black;
+    padding: 15px;
+}
+
 header span {
     float:left;
 }
-
