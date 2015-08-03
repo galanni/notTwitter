@@ -23,8 +23,21 @@ var server = http.createServer(function(req, res) {
       // por cada tweet, preguntar si su propiedad timestamp es mayor
       // a req.headers.timestamp, si lo es entonces agregar el tweet
       // en cuestión al array tweets
+      Object.keys(users).forEach(function(user) {
+        if (req.headers.user !== user) {
+
+          // el método "filter" de array devueve un array cómo resultado
+          // por lo tanto quiero concatenar lo que retorna con el array que ya tenía
+          tweets = tweets.concat(users[user].filter(function(t) {
+            if (t.timestamp > req.headers.timestamp) {
+              return true;
+            }
+          }));
+        }
+      });
 
       // responder el contenido de tweets transformado a string
+      res.end(JSON.stringify(tweets));
       return;
     }
   }
