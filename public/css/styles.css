@@ -43,6 +43,7 @@ header {
     top:0px;
     border: 1px solid black;
     text-align: center;
+    background-color: white;
 }
 
 header span {
