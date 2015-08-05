@@ -21,7 +21,7 @@ Deberías ahora poder acceder a la URL [http://localhost:8000](http://localhost:
 Si querés cambiar el puerto dónde escucha tu servidor, podrías ejecutar `node index.js --port 3333` cambiando el número de puerto por el de tu preferencia.
 
 ## Funcionalidades a agregar
-La aplicación sirve el contenido estático del directorio `public` y en el lado del cliente utiliza jQuery para realizar solicitudes AJAX. El servidor posee dos routas: **una para solicitar tweets** y **otra para enviar tweets**.
+La aplicación sirve el contenido estático del directorio `public` y en el lado del cliente utiliza jQuery para realizar solicitudes AJAX. El servidor posee dos rutas: **una para solicitar tweets** y **otra para enviar tweets**.
 
 ### Solicitando tweets
 El cliente deberá realizar una solicitud a la URL `/data` indicando el user y timestamp correspondientes en los headers de la solicitud. El campo user será el que el usuario ingresó en el input inicial al abrir el sitio y el campo timestamp deberá ser la última vez que se obtuvo una respuesta de los tweets del servidor. Es decir, algo parecido a:
